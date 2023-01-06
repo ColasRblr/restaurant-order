@@ -10,8 +10,17 @@
 </head>
 
 <body>
+<!-- HEADER -->
+<header class="head">
+    <div id="logorestau">
+        <img src="./img/logo.png" alt="logo" width="200px" height="auto" id="logo">
+    </div>
+    <div id="namerestau">
+        <h1>La table du bonheur</h1>
+    </div>
+</header>
 
-    <h1>Procédez au paiement de votre commande</h1>
+    <h3>Procédez au paiement de votre commande</h3>
 
     <form id="form">
         <div class="block">
@@ -109,6 +118,24 @@
             <input type="submit" id="submit" onclick="return Verif(event)" value="Valider la commande">
         </div>
     </form>
+
+    <footer class="footer">
+        <div class="contact">
+            <h2>Nous contacter</h2>
+            <p>04 76 58 86 29</p>
+            <p>latabledubonnheur@gmail.com</p>
+        </div>
+        <div class="address">
+            <div class="location">
+                <h2>Venez nous rendre visite !</h2>
+                <p>44 Av. de l'Europe <br/>48000 Grenoble </p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11253.404594120584!2d5.7322375!3d45.1597387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91b3b3f2fa58b3b4!2sSimplon%20Grenoble%20Alpes!5e0!3m2!1sfr!2sfr!4v1672940475356!5m2!1sfr!2sfr" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </footer>
 
     <script src="./jspaiement.js"></script>
 
