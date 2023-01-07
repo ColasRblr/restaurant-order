@@ -6,138 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paiement</title>
-    <link rel="stylesheet" href="pagepaiement.css">
+    <link rel="stylesheet" href="../css/pagepaiement.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- HEADER -->
-<header class="head">
-    <div id="logorestau">
-        <img src="./img/logo.png" alt="logo" width="200px" height="auto" id="logo">
+    <!-- HEADER -->
+    <header class="head">
+        <div id="logorestau">
+            <a href="file:///C:/Users/utilisateur/git/Passercommande/Passercommande/html/accueil.html">
+                <img src="../img/logo.png" alt="logo" width="230px" height="auto" id="logo">
+            </a>
+        </div>
+        <div id="namerestau">
+            <h1>La table du bonheur</h1>
+        </div>
+    </header>
+
+    <div>
+        <a href="file:///C:/Users/utilisateur/git/Passercommande/Passercommande/html/accueil.html">
+            <button id="return">Retour</button>
+        </a>
     </div>
-    <div id="namerestau">
-        <h1>La table du bonheur</h1>
-    </div>
-</header>
 
     <h3>Procédez au paiement de votre commande</h3>
+    <div id="misepage">
+        <form id="form">
+            <div class="block">
 
-    <form id="form">
-        <div class="block">
+                <div class="coordonnees">
+                    <h4>Vos coordonnées</h4>
+                    <div>
+                        <p class="error"></p>
+                        <label name="name">Nom et Prénom</label>
+                        <br>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <p class="error"></p>
+                        <label name="phone">Téléphone</label>
+                        <br>
+                        <input type="text" id="phone">
+                    </div>
+                    <div>
+                        <p class="error"></p>
+                        <label name="adresse">Adresse</label>
+                        <br>
+                        <input type="text" id="adresse">
+                    </div>
+                    <div>
+                        <p class="error"></p>
+                        <label name="code">Code postal</label>
+                        <br>
+                        <input type="text" id="code">
+                    </div>
+                    <div>
+                        <p class="error"></p>
+                        <label name="city">Ville</label>
+                        <br>
+                        <input type="text" id="city">
+                    </div>
+                </div>
 
+                <div class="paiement">
+
+                    <h4>Choisissez votre mode de paiement</h4>
+
+                    <input type="radio" id="card" name="option" class="option" checked>
+                    <label for="cash" class="option">CB</label>
+
+                    <input type="radio" name="option" id="cash" class="option">
+                    <label for="cash" class="option">Espèce</label>
+
+                    <div id="formCB">
+                        <div>
+                            <p class="error"></p>
+                            <label name="namecb">Nom</label>
+                            <br>
+                            <input type="text" id="namecb">
+                        </div>
+                        <div>
+                            <p class="error"></p>
+                            <label name="numberCard">Numéro de carte</label>
+                            <br>
+                            <input type="text" id="numberCard">
+                        </div>
+                        <div>
+                            <p class="error"></p>
+                            <label name="dateExpiration">Date d'expiration</label>
+                            <br>
+                            <input type="text" id="dateExpiration">
+                        </div>
+                        <div>
+                            <p class="error"></p>
+                            <label name="security">Code de sécurité</label>
+                            <br>
+                            <input type="text" id="security">
+                        </div>
+
+                    </div>
+
+                    <div id="appoint">
+                        <p>Veuillez préparer l'appoint pour le livreur</p>
+                    </div>
+
+                    <!--si il y a un probleme c'est ici-->
+                </div>
+
+                <div class="recap">
+                    <h4>Récapitulatif de la commande</h4>
+
+                    <div class="btn">
+                        <p>Prix total <span id="price">52</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="button">
+                <input type="submit" id="submit" onclick="return Verif(event)" value="Valider la commande">
+            </div>
+        </form>
+
+        <footer class="footer">
             <div class="contact">
-
-
-                <h2>Vos coordonnées</h2>
-                <div>
-                    <p class="error"></p>
-                    <label name="name">Nom et Prénom</label>
-                    <br>
-                    <input type="text" id="name">
+                <h2>Nous contacter</h2>
+                <p>04 76 58 86 29</p>
+                <p>latabledubonnheur@gmail.com</p>
+            </div>
+            <div class="address">
+                <div class="location">
+                    <h2>Venez nous rendre visite !</h2>
+                    <p>44 Av. de l'Europe <br />48000 Grenoble </p>
                 </div>
-                <div>
-                    <p class="error"></p>
-                    <label name="phone">Téléphone</label>
-                    <br>
-                    <input type="text" id="phone">
-                </div>
-                <div>
-                    <p class="error"></p>
-                    <label name="adresse">Adresse</label>
-                    <br>
-                    <input type="text" id="adresse">
-                </div>
-                <div>
-                    <p class="error"></p>
-                    <label name="code">Code postal</label>
-                    <br>
-                    <input type="text" id="code">
-                </div>
-                <div>
-                    <p class="error"></p>
-                    <label name="city">Ville</label>
-                    <br>
-                    <input type="text" id="city">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11253.404594120584!2d5.7322375!3d45.1597387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91b3b3f2fa58b3b4!2sSimplon%20Grenoble%20Alpes!5e0!3m2!1sfr!2sfr!4v1672940475356!5m2!1sfr!2sfr"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
-
-            <div class="paiement">
-
-                <h2>Choisissez votre mode de paiement</h2>
-
-                <input type="radio" id="card" name="option" class="option" checked>
-                <label for="cash" class="option">CB</label>
-
-                <input type="radio" name="option" id="cash" class="option">
-                <label for="cash" class="option">Espèce</label>
-
-                <div id="formCB">
-                    <div>
-                        <p class="error"></p>
-                        <label name="namecb">Nom</label>
-                        <br>
-                        <input type="text" id="namecb">
-                    </div>
-                    <div>
-                        <p class="error"></p>
-                        <label name="numberCard">Numéro de carte</label>
-                        <br>
-                        <input type="text" id="numberCard">
-                    </div>
-                    <div>
-                        <p class="error"></p>
-                        <label name="dateExpiration">Date d'expiration</label>
-                        <br>
-                        <input type="text" id="dateExpiration">
-                    </div>
-                    <div>
-                        <p class="error"></p>
-                        <label name="security">Code de sécurité</label>
-                        <br>
-                        <input type="text" id="security">
-                    </div>
-
-                </div>
-
-                <div id="appoint">
-                    <p>Veuillez préparer l'appoint pour le livreur</p>
-                </div>
-
-<!--si il y a un probleme c'est ici-->
-            </div>
-
-            <div class="recap">
-                <h2>Récapitulatif de la commande</h2>
-
-            <div class="btn">
-                <p>Prix total <span id="price">52</span></p>
-
-            </div>
-        </div>
-        <div id="button">
-            <input type="submit" id="submit" onclick="return Verif(event)" value="Valider la commande">
-        </div>
-    </form>
-
-    <footer class="footer">
-        <div class="contact">
-            <h2>Nous contacter</h2>
-            <p>04 76 58 86 29</p>
-            <p>latabledubonnheur@gmail.com</p>
-        </div>
-        <div class="address">
-            <div class="location">
-                <h2>Venez nous rendre visite !</h2>
-                <p>44 Av. de l'Europe <br/>48000 Grenoble </p>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11253.404594120584!2d5.7322375!3d45.1597387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91b3b3f2fa58b3b4!2sSimplon%20Grenoble%20Alpes!5e0!3m2!1sfr!2sfr!4v1672940475356!5m2!1sfr!2sfr" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./jspaiement.js"></script>
+        </footer>
+    </div>
+    <script src="../js/jspaiement.js"></script>
 
 </body>
 
