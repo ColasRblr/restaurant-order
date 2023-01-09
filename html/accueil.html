@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="cssAccueil.css">
+    <link rel="stylesheet" href="../css/cssAccueil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <!-- HEADER -->
 <header class="head">
     <div id="logorestau">
-        <img src="./img/logo.png" alt="logo" width="200px" height="auto" id="logo">
+        <img src="../img/logo.png" alt="logo" width="200px" height="auto" id="logo">
     </div>
     <div id="namerestau">
         <h1>La table du bonheur</h1>
@@ -35,70 +35,70 @@
         
             <!-- MEAT BURGER -->
             <div class="burgers">
-                <h4 id="meatburger">Le carnassier</h4>
+                <h4 class="dish_name">Le carnassier</h4>
                 <div class="picandside">
-                    <img src="./img/burger_meat.png" alt="burger+pic" width="200"  height="180" class="foodpic">
+                    <img src="../img/burger_meat.png" alt="burger+pic" width="200"  height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Boeuf, cheddar, oignons frits.</p>
                         <p class="price" id="price">12</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
 
             </div>
             
             <!-- FISH BURGER -->
             <div class="burgers">
-                <h4 id="fishburger">Le fish burger</h4>
+                <h4 class="dish_name">Le fish burger</h4>
                 <div class="picandside">
-                    <img src="./img/burger_fish.png" alt="burger+pic" width="200"  height="180"  class="foodpic">
+                    <img src="../img/burger_fish.png" alt="burger+pic" width="200"  height="180"  class="foodpic">
                     <div class="encart">
                         <p class="description">Cabillaud, sauce blanche à l'aneth, tomates.</p>
                         <p class="price">11</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
             </div>
      
             <!-- VEGGIE BURGER -->
             <div class="burgers">
-                <h4 id="veggieburger">Le fromager (végétarien)</h4>
+                <h4 class="dish_name">Le fromager (végétarien)</h4>
                 <div class="picandside">
-                    <img src="./img/burger_veggie.png" alt="burger+pic" width="200" height="180" class="foodpic">
+                    <img src="../img/burger_veggie.png" alt="burger+pic" width="200" height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Galette de légumes, bleu d'auvergne, cornichons.</p>
                         <p class="price">10</p><p>€</p>
                     </div>
                 </div>
                  <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                  </div>
             </div>
             
             <!-- VEGAN BURGER -->
             <div class="burgers"> 
-                <h4 id="veganburger">Le provençal (vegan)</h4>
+                <h4 class="dish_name">Le provençal (vegan)</h4>
                 <div class="picandside">
-                    <img src="./img/burger_vegan.png" alt="burger+pic" width="200"  height="180"  class="foodpic">
+                    <img src="../img/burger_vegan.png" alt="burger+pic" width="200"  height="180"  class="foodpic">
                     <div class="encart">
                         <p class="description">Galette de légumes, tomate confite, sauce aux câpres.</p>
                         <p class="price">10</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
             </div>
     
@@ -110,35 +110,35 @@
     
             <!-- FRIES -->
             <div class="sides"> 
-                <h4 id="fries">Frites</h4>
+                <h4 class="dish_name">Frites</h4>
                 <div class="picandside">
-                    <img src="./img/fries.png" alt="side+pic" width="200" height="180" class="foodpic">
+                    <img src="../img/fries.png" alt="side+pic" width="200" height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Pommes de terre issues de l'agriculture biologique.</p>
                         <p class="price">5</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
             </div>
             
             <!-- SALAD-->
             <div class="sides">    
-                <h4 id="salad">Salade</h4>
+                <h4 class="dish_name">Salade</h4>
                 <div class="picandside">
-                    <img src="./img/salad.png" alt="side+pic" width="200"  height="180" class="foodpic">
+                    <img src="../img/salad.png" alt="side+pic" width="200"  height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Crudités de saison et issues de l'agriculture biologique.</p>
                         <p class="price">4</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
             </div>
     </section>
@@ -150,41 +150,41 @@
         <!-- STILL WATER -->
         <div class="drinks">
             <div class="inline">
-                <h4 id="water">Eau plate</h4>
+                <h4 class="dish_name">Eau plate</h4>
                 <p class="price">2</p><p>€</p>
      
             </div>
             <div class="buttons">
-                <button class="-" id="-" value="-">-</button>
-                <input type="text" class="zero" id="zero" value="0">
-                <button class="+" id="+" value="+">+</button>
+                <button class="minus" id="-" value="-">-</button>
+                <input type="text" class="count_item" id="zero" value="0">
+                <button class="plus" id="+" value="+">+</button>
             </div>
         </div>
         
         <!-- SPARKLING WATER -->
         <div class="drinks">
             <div class="inline">
-                <h4 id="sparklingwater">Eau gazeuse</h4>
+                <h4 class="dish_name">Eau gazeuse</h4>
                 <p class="price">2</p><p>€</p>
 
             </div>
             <div class="buttons">
-                <button class="-" id="-" value="-">-</button>
-                <input type="text" class="zero" id="zero" value="0">
-                <button class="+" id="+" value="+">+</button>
+                <button class="minus" id="-" value="-">-</button>
+                <input type="text" class="count_item" id="zero" value="0">
+                <button class="plus" id="+" value="+">+</button>
             </div>
         </div>
         
         <!-- LEMONADE -->
         <div class="drinks">
             <div class="inline">
-                <h4 id="lemonade">Limonade</h4>
+                <h4 class="dish_name">Limonade</h4>
                 <p class="price">4</p><p>€</p>
             </div>
             <div class="buttons">
-                <button class="-" id="-" value="-">-</button>
-                <input type="text" class="zero" id="zero" value="0">
-                <button class="+" id="+" value="+">+</button>
+                <button class="minus" id="-" value="-">-</button>
+                <input type="text" class="count_item" id="zero" value="0">
+                <button class="plus" id="+" value="+">+</button>
             </div>
         </div>
     
@@ -196,70 +196,75 @@
 
             <!-- FRUITS -->
             <div class="desserts"> 
-                <h4 id="fruits">Salade de fruits</h4>
+                <h4 class="dish_name">Salade de fruits</h4>
                 <div class="picandside">
-                    <img src="./img/fruits.png" alt="dessert+pic" width="200"  height="180" class="foodpic">
+                    <img src="../img/fruits.png" alt="dessert+pic" width="200"  height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Assortiment de fruits de saison.</p>
                         <p class="price">4</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
 
             </div>
 
             <!-- CHOCOLATE CAKE -->
             <div class="desserts"> 
-                <h4 id="cake">Gâteau au chocolat</h4>
+                <h4 class="dish_name">Gâteau au chocolat</h4>
                 <div class="picandside">
-                    <img src="./img/chocolate.png" alt="dessert+pic" width="200" height="180" class="foodpic">
+                    <img src="../img/chocolate.png" alt="dessert+pic" width="200" height="180" class="foodpic">
                     <div class="encart">
                         <p class="description">Vegan.</p>
                         <p class="price">5</p><p>€</p>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="-" id="-" value="-">-</button>
-                    <input type="text" class="zero" id="zero" value="0">
-                    <button class="+" id="+" value="+">+</button>
+                    <button class="minus" id="-" value="-">-</button>
+                    <input type="text" class="count_item" id="zero" value="0">
+                    <button class="plus" id="+" value="+">+</button>
                 </div>
             </div>
         
         <!-- LEMON PIE -->
 
         <div class="desserts">    
-            <h4 id="pie">Tarte au citron meringuée</h4>
+            <h4 class="dish_name">Tarte au citron meringuée</h4>
             <div class="picandside">
-                <img src="./img/lemonpie.jpg" alt="dessert+pic" width="200" height="180" class="foodpic">
+                <img src="../img/lemonpie.jpg" alt="dessert+pic" width="200" height="180" class="foodpic">
                 <div class="encart">
                     <p class="description">Non vegan.</p>
                     <p class="price">5</p><p>€</p>
                 </div>
             </div>
             <div class="buttons">
-                <button class="-" id="-" value="-">-</button>
-                <input type="text" class="zero" id="zero" value="0">
-                <button class="+" id="+" value="+">+</button>
+                <button class="minus" id="-" value="-">-</button>
+                <input type="text" class="count_item" id="zero" value="0">
+                <button class="plus" id="+" value="+">+</button>
             </div>
         </div>
     </section>
 
 </section>
 
+<!-- RECAP COMMAND -->
+
 <div class="recap">
     <h4>Récapitulatif de la commande</h4>
-    <div id="nombre">
+    <div id="item_div">
+        <!-- la commande s'insere ici -->
     </div>
     <div class="btn">
-        <p>Prix total <span id="price"></span></p>
+        <p id="command_price"></p>
         <button id="validate">Validez la commande</button>
     </div>
 </div>
 </div>
+
+<!-- FOOTER -->
 
 <footer class="footer">
     <div class="contact">
@@ -273,12 +278,12 @@
             <p>44 Av. de l'Europe <br/>48000 Grenoble </p>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11253.404594120584!2d5.7322375!3d45.1597387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91b3b3f2fa58b3b4!2sSimplon%20Grenoble%20Alpes!5e0!3m2!1sfr!2sfr!4v1672940475356!5m2!1sfr!2sfr" referrerpolicy="no-referrer-when-downgrade">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11253.404594120584!2d5.7322375!3d45.1597387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91b3b3f2fa58b3b4!2sSimplon%20Grenoble%20Alpes!5e0!3m2!1sfr!2sfr!4v1672940475356!5m2!1sfr!2sfr" referrerpolicy="no-referrer-when-downgrade"> -->
         </iframe>
         </div>
     </div>
 </footer>
 
-<script src="./app.js"></script>
+<script src="../js/accueil.js"></script>
 </body>
 </html>
