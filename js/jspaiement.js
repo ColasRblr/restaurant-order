@@ -3,6 +3,8 @@ const radioEspece = document.getElementById("cash");
 const formCB = document.getElementById("formCB");
 const formAppoint = document.getElementById("appoint");
 const submitBtn = document.getElementById("button");
+const price = document.getElementById("price");
+const returnToAccueil = document.getElementById("returnToAccueil");
 
 radioCB.addEventListener("click", isChecked);
 radioEspece.addEventListener("click", isChecked);
@@ -151,3 +153,12 @@ let storedPrix = localStorage.getItem('prix');
 
 let euro = document.getElementById("price");
 euro.innerHTML = storedPrix;
+
+const priceStored = sessionStorage.getItem("price");
+price.innerHTML = priceStored;
+
+returnToAccueil.addEventListener("click", openAcceuil);
+
+function openAcceuil() {
+    document.location.href = "../html/accueil.html";
+};
